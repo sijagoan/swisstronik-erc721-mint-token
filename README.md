@@ -1,4 +1,4 @@
-# Swisstronik Testnet 2.0 // Mint ERC-721 Token.
+# Swisstronik Testnet 2.0 (Deploy ERC-721 Token).
 
 Link : [Click!](https://www.swisstronik.com/testnet2/dashboard)
 
@@ -7,7 +7,7 @@ Link : [Click!](https://www.swisstronik.com/testnet2/dashboard)
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/ragilzy/swisstronik-erc721-mint-token.git
+git clone https://github.com/sijagoan/swisstronik-erc721-mint-token.git
 ```
 
 ```
@@ -24,6 +24,11 @@ npm install
 
 create .env file in root project
 
+```bash
+touch .env
+```
+
+add this to your .env file
 ```bash
 PRIVATE_KEY="your private key"
 ```
@@ -45,7 +50,7 @@ contract TestNFT is ERC721 {
 
     event NFTMinted(address recipient, uint256 tokenId);
 
-    constructor() ERC721("UniswapNFT", "UNI") {}
+    constructor() ERC721("DogsNFT", "DOGS") {}
 
     function mintNFT(address recipient) public returns (uint256) {
         _currentTokenId += 1;
@@ -84,6 +89,4 @@ npm run mint
 
 ### Finished.
 
-Github  : [ragilzy](https://github.com/ragilzy)
-
-Swisstronik Address Testnet 0xBD686f99674d8c96597f9B70a2e27EfF3c8BEF74
+Address Testnet 0xE07E1B83d974E90EE489D2aFa227B676D2a43B3F
